@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Roy Harris</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Roy Harris Apps</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="RoyHarrisApps.html" class="nav-link">Apps</a></li>
+                <li><a href="RoyHarrisResources.html" class="nav-link">Resources</a></li>
+                <li><a href="RoyHarrisVideos.html" class="nav-link active">Videos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video -->
+    <section class="hero video-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Watch Roy Harris in Action</h1>
+                <p class="hero-subtitle">Experience the power of skill-based learning through our comprehensive video library featuring Roy Harris' expert instruction and technique demonstrations.</p>
+                <div class="hero-buttons">
+                    <a href="#video-library" class="btn btn-primary">Browse Videos</a>
+                    <a href="RoyHarrisResources.html" class="btn btn-secondary">More Resources</a>
+                </div>
+            </div>
+            <div class="hero-video">
+                <div class="video-container">
+                    <div class="video-placeholder" id="main-video">
+                        <div class="video-overlay">
+                            <div class="play-button">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="30" cy="30" r="30" fill="#2cb4fb"/>
+                                    <path d="M25 20L40 30L25 40V20Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <h3>Featured Video</h3>
+                            <p>Introduction to Skill-Based Learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Library Section -->
+    <section id="video-library" class="video-library">
+        <div class="container">
+            <div class="section-header">
+                <h2>Video Library</h2>
+                <p>Explore our collection of instructional videos and training content</p>
+            </div>
+            <div class="video-categories">
+                <button class="category-btn active" data-category="all">All Videos</button>
+                <button class="category-btn" data-category="techniques">Techniques</button>
+                <button class="category-btn" data-category="training">Training</button>
+                <button class="category-btn" data-category="philosophy">Philosophy</button>
+                <button class="category-btn" data-category="tips">Tips & Tricks</button>
+            </div>
+            <div class="videos-grid">
+                <div class="video-card" data-category="techniques">
+                    <div class="video-thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-button small">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#2cb4fb"/>
+                                    <path d="M12.5 10L20 15L12.5 20V10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Basic Guard Techniques</h3>
+                        <p>Learn fundamental guard positions and transitions</p>
+                        <span class="video-duration">15:30</span>
+                    </div>
+                </div>
+                <div class="video-card" data-category="training">
+                    <div class="video-thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-button small">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#2cb4fb"/>
+                                    <path d="M12.5 10L20 15L12.5 20V10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Training Methodology</h3>
+                        <p>Effective approaches to skill development</p>
+                        <span class="video-duration">22:15</span>
+                    </div>
+                </div>
+                <div class="video-card" data-category="philosophy">
+                    <div class="video-thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-button small">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#2cb4fb"/>
+                                    <path d="M12.5 10L20 15L12.5 20V10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Martial Arts Philosophy</h3>
+                        <p>Understanding the deeper aspects of training</p>
+                        <span class="video-duration">18:45</span>
+                    </div>
+                </div>
+                <div class="video-card" data-category="tips">
+                    <div class="video-thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-button small">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#2cb4fb"/>
+                                    <path d="M12.5 10L20 15L12.5 20V10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Common Mistakes to Avoid</h3>
+                        <p>Learn from common training errors</p>
+                        <span class="video-duration">12:20</span>
+                    </div>
+                </div>
+                <div class="video-card" data-category="techniques">
+                    <div class="video-thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-button small">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#2cb4fb"/>
+                                    <path d="M12.5 10L20 15L12.5 20V10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Advanced Submissions</h3>
+                        <p>Master complex submission techniques</p>
+                        <span class="video-duration">25:10</span>
+                    </div>
+                </div>
+                <div class="video-card" data-category="training">
+                    <div class="video-thumbnail">
+                        <div class="video-overlay">
+                            <div class="play-button small">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="15" fill="#2cb4fb"/>
+                                    <path d="M12.5 10L20 15L12.5 20V10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Conditioning Workouts</h3>
+                        <p>Physical preparation for martial arts</p>
+                        <span class="video-duration">20:30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Series Section -->
+    <section class="featured-series">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Series</h2>
+                <p>In-depth learning series from Roy Harris</p>
+            </div>
+            <div class="series-grid">
+                <div class="series-card">
+                    <div class="series-thumbnail">
+                        <div class="series-overlay">
+                            <div class="play-button">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#2cb4fb"/>
+                                    <path d="M16.67 13.33L26.67 20L16.67 26.67V13.33Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series-info">
+                        <h3>Complete Beginner's Guide</h3>
+                        <p>12-part series covering fundamentals</p>
+                        <div class="series-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span>9 of 12 videos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="series-card">
+                    <div class="series-thumbnail">
+                        <div class="series-overlay">
+                            <div class="play-button">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="20" fill="#2cb4fb"/>
+                                    <path d="M16.67 13.33L26.67 20L16.67 26.67V13.33Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="series-info">
+                        <h3>Advanced Competition Prep</h3>
+                        <p>8-part series for competitive athletes</p>
+                        <div class="series-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%"></div>
+                            </div>
+                            <span>4 of 8 videos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-video-container">
+                <div class="modal-video-placeholder">
+                    <h3>Video Player</h3>
+                    <p>Video content would be embedded here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Roy Harris Apps</h3>
+                    <p>Empowering learners through innovative instructional technology</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="RoyHarrisResources.html">Resources</a></li>
+                        <li><a href="#courses">Online Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="RoyHarrisResources.html">RoyHarris.com</a></li>
+                        <li><a href="RoyHarrisResources.html">HarrisJiuJitsu.com</a></li>
+                        <li><a href="RoyHarrisResources.html">YouTube</a></li>
+                        <li><a href="RoyHarrisResources.html">Social Media</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Roy Harris 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
