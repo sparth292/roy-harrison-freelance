@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Roy Harris</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Roy Harris Apps</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="RoyHarrisApps.html" class="nav-link">Apps</a></li>
+                <li><a href="RoyHarrisResources.html" class="nav-link">Resources</a></li>
+                <li><a href="RoyHarrisVideos.html" class="nav-link">Videos</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero contact-hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Have questions about our instructional applications? Want to learn more about Roy Harris' training programs? We'd love to hear from you.</p>
+                <div class="hero-buttons">
+                    <a href="#contact-form" class="btn btn-primary">Send Message</a>
+                    <a href="RoyHarrisResources.html" class="btn btn-secondary">View Resources</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="contact-hero-graphic">
+                    <div class="contact-icons">
+                        <div class="contact-icon"><img height="280px" src="contact.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>Multiple ways to reach Roy Harris and his team</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>For general inquiries and support</p>
+                    <a href="mailto:info@royharris.com" class="contact-link">info@royharris.com</a>
+                    <a href="mailto:support@royharris.com" class="contact-link">support@royharris.com</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>Speak directly with our team</p>
+                    <a href="tel:+1-555-123-4567" class="contact-link">+1 (555) 123-4567</a>
+                    <span class="contact-note">Mon-Fri: 9AM-6PM PST</span>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Training Center</h3>
+                    <p>Visit our physical location</p>
+                    <address class="contact-address">
+                        123 Training Street<br>
+                        Martial Arts District<br>
+                        San Diego, CA 92101
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-content">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours. Whether you have questions about our apps, need technical support, or want to discuss training opportunities, we're here to help.</p>
+                    
+                    <div class="form-features">
+                        <div class="form-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Quick response within 24 hours</span>
+                        </div>
+                        <div class="form-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Expert support from our team</span>
+                        </div>
+                        <div class="form-feature">
+                            <span class="feature-check">✓</span>
+                            <span>Personalized assistance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="training">Training Programs</option>
+                                <option value="apps">App Questions</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates and training tips
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I get started with Roy Harris' training apps?</h3>
+                    <p>Simply visit our Apps page, choose the application that best fits your needs, and follow the registration process. Each app includes comprehensive onboarding to get you started quickly.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I need technical support?</h3>
+                    <p>Our support team is available 24/7 through live chat, email, and phone. We typically respond to all inquiries within 24 hours and can help with any technical issues you may encounter.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are the training programs suitable for beginners?</h3>
+                    <p>Absolutely! Our applications are designed for all skill levels, from complete beginners to advanced practitioners. Each program includes progressive learning paths tailored to your experience level.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I access the training content offline?</h3>
+                    <p>Yes, many of our applications offer offline access to training materials. Simply download the content when you have an internet connection and access it anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Roy Harris Apps</h3>
+                    <p>Empowering learners through innovative instructional technology</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="RoyHarrisResources.html">Resources</a></li>
+                        <li><a href="#courses">Online Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="RoyHarrisResources.html">RoyHarris.com</a></li>
+                        <li><a href="RoyHarrisResources.html">HarrisJiuJitsu.com</a></li>
+                        <li><a href="RoyHarrisResources.html">YouTube</a></li>
+                        <li><a href="RoyHarrisResources.html">Social Media</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Roy Harris 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

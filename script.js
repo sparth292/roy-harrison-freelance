@@ -229,4 +229,44 @@ const rippleStyles = `
 
 const rippleStyle = document.createElement('style');
 rippleStyle.textContent = rippleStyles;
-document.head.appendChild(rippleStyle); 
+document.head.appendChild(rippleStyle);
+
+// Contact Form Functionality
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form elements
+        const submitBtn = this.querySelector('.submit-btn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+        
+        // Show loading state
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline';
+        submitBtn.disabled = true;
+        
+        // Simulate form submission (replace with actual backend integration)
+        setTimeout(() => {
+            // Show success message
+            alert('Thank you for your message! We will get back to you within 24 hours.');
+            
+            // Reset form
+            this.reset();
+            
+            // Reset button state
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+            submitBtn.disabled = false;
+        }, 2000);
+    });
+}
+
+// Live Chat Button Functionality
+const liveChatBtn = document.querySelector('.contact-card .btn');
+if (liveChatBtn) {
+    liveChatBtn.addEventListener('click', function() {
+        alert('Live chat feature would be integrated here. For now, please use our contact form or email us directly.');
+    });
+} 
